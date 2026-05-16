@@ -8,13 +8,13 @@
 
 # Nexora Launcher (Offline Edition)
 
-This is a custom, cracked fork of **[Nexora Launcher](https://github.com/snikdev/NexoraLauncher)** (which is built with [Prism Launcher](https://prismlauncher.org/)). This version enables offline accounts, allowing you to play without Microsoft authentication.
+This is a custom, cracked fork of **[Nexora Launcher](https://github.com/snikdev/Nexora-Launcher)** (which is built with [Prism Launcher](https://prismlauncher.org/)). This version enables offline accounts, allowing you to play without Microsoft authentication.
 
 *Not affiliated with the official Prism Launcher, or Mojang/Microsoft.*
 
 ## Download
 
-Get the latest release from the [**Releases Page**](https://github.com/snikdev/NexoraLauncher/releases).
+Get the latest release from the [**Releases Page**](https://github.com/snikdev/Nexora-Launcher/releases).
 
 > [!WARNING]
 > DO NOT use official Microsoft/Mojang accounts with this launcher. This bypasses authentication and is intended for offline play only. Using with official servers may violate Minecraft's Terms of Service.

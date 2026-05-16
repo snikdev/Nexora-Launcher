@@ -14,7 +14,7 @@ This is a custom, cracked fork of **[Nexora Launcher](https://github.com/snikdev
 
 ## Download
 
-Get the latest release from the [**Releases Page**](https://github.com/Diegiwg/NexoraLauncher-Cracked/releases).
+Get the latest release from the [**Releases Page**](https://github.com/snikdev/NexoraLauncher/releases).
 
 > [!WARNING]
 > DO NOT use official Microsoft/Mojang accounts with this launcher. This bypasses authentication and is intended for offline play only. Using with official servers may violate Minecraft's Terms of Service.

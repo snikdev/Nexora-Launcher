@@ -6,7 +6,11 @@
 </picture>
 </p>
 
-Fork of [Nexora Launcher](https://github.com/NexoraLauncher/NexoraLauncher) enabling offline accounts without Microsoft authentication. Not affiliated with the official project.
+# Nexora Launcher (Offline Edition)
+
+This is a custom, cracked fork of **[Nexora Launcher](https://github.com/snikdev/NexoraLauncher)** (which is built with [Prism Launcher](https://prismlauncher.org/)). This version enables offline accounts, allowing you to play without Microsoft authentication.
+
+*Not affiliated with the official Prism Launcher, or Mojang/Microsoft.*
 
 ## Download
 

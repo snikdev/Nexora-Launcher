@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 /*
- *  Prism Launcher - Minecraft Launcher
+ *  Nexora Launcher - Minecraft Launcher
  *  Copyright (c) 2022 flowln <flowlnlnln@gmail.com>
  *
  *  This program is free software: you can redistribute it and/or modify
@@ -39,8 +39,8 @@ class ResourcePackParseTest : public QObject {
 
         QVERIFY(pack.packFormat() == 3);
         QVERIFY(pack.description() ==
-                "um dois, feijão com arroz, três quatro, feijão no prato, cinco seis, café inglês, sete oito, comer biscoito, nove dez "
-                "comer pastéis!!");
+                "um dois, feijÃ£o com arroz, trÃªs quatro, feijÃ£o no prato, cinco seis, cafÃ© inglÃªs, sete oito, comer biscoito, nove dez "
+                "comer pastÃ©is!!");
         QVERIFY(valid == true);
     }
 

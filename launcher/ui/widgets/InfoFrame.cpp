@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 /*
- *  Prism Launcher - Minecraft Launcher
+ *  Nexora Launcher - Minecraft Launcher
  *  Copyright (c) 2022 flowln <flowlnlnln@gmail.com>
  *  Copyright (c) 2023 Trial97 <alexandru.tripon97@gmail.com>
  *
@@ -161,7 +161,7 @@ QString InfoFrame::renderColorCodes(QString input)
 {
     // We have to manually set the colors for use.
     //
-    // A color is set using §x, with x = a hex number from 0 to f.
+    // A color is set using Â§x, with x = a hex number from 0 to f.
     //
     // We traverse the description and, when one of those is found, we create
     // a span element with that color set.
@@ -181,8 +181,8 @@ QString InfoFrame::renderColorCodes(QString input)
 
     auto it = input.constBegin();
     while (it != input.constEnd()) {
-        // is current char § and is there a following char
-        if (*it == u'§' && (it + 1) != input.constEnd()) {
+        // is current char Â§ and is there a following char
+        if (*it == u'Â§' && (it + 1) != input.constEnd()) {
             const auto& code = *(++it);  // incrementing here!
 
             const auto color_entry = color_codes_map.constFind(code);
@@ -199,7 +199,7 @@ QString InfoFrame::renderColorCodes(QString input)
                     html += QString("</%1>").arg(tags.takeLast());
                 }
             } else {  // pass unknown codes through
-                html += QString("§%1").arg(code);
+                html += QString("Â§%1").arg(code);
             }
         } else {
             html += *it;

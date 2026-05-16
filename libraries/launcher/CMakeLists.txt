@@ -3,39 +3,39 @@ project(launcher Java)
 find_package(Java 1.7 REQUIRED COMPONENTS Development)
 
 include(UseJava)
-set(CMAKE_JAVA_JAR_ENTRY_POINT org.prismlauncher.EntryPoint)
+set(CMAKE_JAVA_JAR_ENTRY_POINT org.nexoralauncher.EntryPoint)
 set(CMAKE_JAVA_COMPILE_FLAGS -target 7 -source 7)
 
 set(SRC
-    org/prismlauncher/EntryPoint.java
-    org/prismlauncher/launcher/Launcher.java
-    org/prismlauncher/launcher/impl/AbstractLauncher.java
-    org/prismlauncher/launcher/impl/StandardLauncher.java
-    org/prismlauncher/exception/ParameterNotFoundException.java
-    org/prismlauncher/exception/ParseException.java
-    org/prismlauncher/utils/Parameters.java
-    org/prismlauncher/utils/ReflectionUtils.java
-    org/prismlauncher/utils/logging/Level.java
-    org/prismlauncher/utils/logging/Log.java
-    org/prismlauncher/legacy/LegacyProxy.java
+    org/nexoralauncher/EntryPoint.java
+    org/nexoralauncher/launcher/Launcher.java
+    org/nexoralauncher/launcher/impl/AbstractLauncher.java
+    org/nexoralauncher/launcher/impl/StandardLauncher.java
+    org/nexoralauncher/exception/ParameterNotFoundException.java
+    org/nexoralauncher/exception/ParseException.java
+    org/nexoralauncher/utils/Parameters.java
+    org/nexoralauncher/utils/ReflectionUtils.java
+    org/nexoralauncher/utils/logging/Level.java
+    org/nexoralauncher/utils/logging/Log.java
+    org/nexoralauncher/legacy/LegacyProxy.java
 )
 
 set(LEGACY_SRC
-    legacy/org/prismlauncher/legacy/LegacyFrame.java
-    legacy/org/prismlauncher/legacy/LegacyLauncher.java
-    legacy/org/prismlauncher/legacy/fix/online/Handler.java
-    legacy/org/prismlauncher/legacy/fix/online/OnlineFixes.java
-    legacy/org/prismlauncher/legacy/fix/online/OnlineModeFix.java
-    legacy/org/prismlauncher/legacy/fix/online/SkinFix.java
-    legacy/org/prismlauncher/legacy/utils/Base64.java
-    legacy/org/prismlauncher/legacy/utils/api/MojangApi.java
-    legacy/org/prismlauncher/legacy/utils/api/Texture.java
-    legacy/org/prismlauncher/legacy/utils/json/JsonParseException.java
-    legacy/org/prismlauncher/legacy/utils/json/JsonParser.java
-    legacy/org/prismlauncher/legacy/utils/url/ByteArrayUrlConnection.java
-    legacy/org/prismlauncher/legacy/utils/url/UrlUtils.java
+    legacy/org/nexoralauncher/legacy/LegacyFrame.java
+    legacy/org/nexoralauncher/legacy/LegacyLauncher.java
+    legacy/org/nexoralauncher/legacy/fix/online/Handler.java
+    legacy/org/nexoralauncher/legacy/fix/online/OnlineFixes.java
+    legacy/org/nexoralauncher/legacy/fix/online/OnlineModeFix.java
+    legacy/org/nexoralauncher/legacy/fix/online/SkinFix.java
+    legacy/org/nexoralauncher/legacy/utils/Base64.java
+    legacy/org/nexoralauncher/legacy/utils/api/MojangApi.java
+    legacy/org/nexoralauncher/legacy/utils/api/Texture.java
+    legacy/org/nexoralauncher/legacy/utils/json/JsonParseException.java
+    legacy/org/nexoralauncher/legacy/utils/json/JsonParser.java
+    legacy/org/nexoralauncher/legacy/utils/url/ByteArrayUrlConnection.java
+    legacy/org/nexoralauncher/legacy/utils/url/UrlUtils.java
     legacy/net/minecraft/Launcher.java
-    legacy/org/prismlauncher/legacy/LegacyProxy.java
+    legacy/org/nexoralauncher/legacy/LegacyProxy.java
 )
 
 add_jar(NewLaunch ${SRC})

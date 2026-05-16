@@ -5,7 +5,7 @@
 // SPDX-License-Identifier: GPL-3.0-only
 
 /*
- *  Prism Launcher - Minecraft Launcher
+ *  Nexora Launcher - Minecraft Launcher
  *  Copyright (C) 2022 Sefa Eyeoglu <contact@scrumplex.net>
  *  Copyright (C) 2022 Rachel Powers <508861+Ryex@users.noreply.github.com>
  *  Copyright (C) 2022 kumquat-ir <66188216+kumquat-ir@users.noreply.github.com>
@@ -151,10 +151,10 @@ void BlockedModsDialog::update()
 
     for (auto& mod : m_mods) {
         if (mod.matched) {
-            // &#x2714; -> html for HEAVY CHECK MARK : ✔
+            // &#x2714; -> html for HEAVY CHECK MARK : âœ”
             span = QString(tr("<span style=\"color:green\"> &#x2714; Found at %1 </span>")).arg(mod.localPath);
         } else {
-            // &#x2718; -> html for HEAVY BALLOT X : ✘
+            // &#x2718; -> html for HEAVY BALLOT X : âœ˜
             span = QString(tr("<span style=\"color:red\"> &#x2718; Not Found </span>"));
         }
         text += QString(tr("%1: <a href='%2'>%2</a> <p>Hash: %3 %4</p> <br/>")).arg(mod.name, mod.websiteUrl, mod.hash, span);
@@ -171,7 +171,7 @@ void BlockedModsDialog::update()
     ui->textBrowserWatched->setText(watching);
 
     if (allModsMatched()) {
-        ui->labelModsFound->setText("<span style=\"color:green\">✔</span>" + tr("All mods found"));
+        ui->labelModsFound->setText("<span style=\"color:green\">âœ”</span>" + tr("All mods found"));
         ui->openMissingButton->setDisabled(true);
         ui->buttonBox->button(QDialogButtonBox::Ok)->setText(tr("OK"));
     } else {

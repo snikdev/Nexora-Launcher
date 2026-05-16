@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 /*
- *  Prism Launcher - Minecraft Launcher
+ *  Nexora Launcher - Minecraft Launcher
  *  Copyright (C) 2022 Sefa Eyeoglu <contact@scrumplex.net>
  *
  *  This program is free software: you can redistribute it and/or modify
@@ -350,7 +350,7 @@ QList<QString> JavaUtils::FindJavaPaths()
     }
 
     candidates.append(getMinecraftJavaBundle());
-    candidates.append(getPrismJavaBundle());
+    candidates.append(getNexoraJavaBundle());
     candidates = addJavasFromEnv(candidates);
     candidates.removeDuplicates();
     return candidates;
@@ -404,7 +404,7 @@ QList<QString> JavaUtils::FindJavaPaths()
     }
 
     javas.append(getMinecraftJavaBundle());
-    javas.append(getPrismJavaBundle());
+    javas.append(getNexoraJavaBundle());
     javas = addJavasFromEnv(javas);
     javas.removeDuplicates();
     return javas;
@@ -461,7 +461,7 @@ QList<QString> JavaUtils::FindJavaPaths()
     scanJavaDir("/usr/lib", gentooFilter);
     scanJavaDir("/opt", gentooFilter);
     scanJavaDir("/usr/lib", aoscFilter);
-    // javas stored in Prism Launcher's folder
+    // javas stored in Nexora Launcher's folder
     scanJavaDirs("java");
     // manually installed JDKs in /opt
     scanJavaDirs("/opt/jdk");
@@ -488,7 +488,7 @@ QList<QString> JavaUtils::FindJavaPaths()
     scanJavaDirs(FS::PathCombine(gradleUserHome, "jdks"));
 
     javas.append(getMinecraftJavaBundle());
-    javas.append(getPrismJavaBundle());
+    javas.append(getNexoraJavaBundle());
     javas = addJavasFromEnv(javas);
     javas.removeDuplicates();
     return javas;
@@ -502,7 +502,7 @@ QList<QString> JavaUtils::FindJavaPaths()
     javas.append(this->GetDefaultJava()->path);
 
     javas.append(getMinecraftJavaBundle());
-    javas.append(getPrismJavaBundle());
+    javas.append(getNexoraJavaBundle());
     javas.removeDuplicates();
     return addJavasFromEnv(javas);
 }
@@ -563,7 +563,7 @@ const QString JavaUtils::javaExecutable = "javaw.exe";
 const QString JavaUtils::javaExecutable = "java";
 #endif
 
-QStringList getPrismJavaBundle()
+QStringList getNexoraJavaBundle()
 {
     QList<QString> javas;
 

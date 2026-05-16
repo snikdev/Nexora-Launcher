@@ -187,8 +187,8 @@ set(MAC_UPDATE_SOURCES
 )
 
 set(PRISM_UPDATE_SOURCES
-    updater/PrismExternalUpdater.h
-    updater/PrismExternalUpdater.cpp
+    updater/NexoraExternalUpdater.h
+    updater/NexoraExternalUpdater.cpp
 )
 
 # Backend for the news bar... there's usually no news.
@@ -607,12 +607,12 @@ set(LINKEXE_SOURCES
 )
 
 set(PRISMUPDATER_SOURCES
-    updater/prismupdater/PrismUpdater.h
-    updater/prismupdater/PrismUpdater.cpp
-    updater/prismupdater/UpdaterDialogs.h
-    updater/prismupdater/UpdaterDialogs.cpp
-    updater/prismupdater/GitHubRelease.h
-    updater/prismupdater/GitHubRelease.cpp
+    updater/nexoraupdater/NexoraUpdater.h
+    updater/nexoraupdater/NexoraUpdater.cpp
+    updater/nexoraupdater/UpdaterDialogs.h
+    updater/nexoraupdater/UpdaterDialogs.cpp
+    updater/nexoraupdater/GitHubRelease.h
+    updater/nexoraupdater/GitHubRelease.cpp
 
     Json.h
     Json.cpp
@@ -1297,7 +1297,7 @@ qt_add_resources(LAUNCHER_RESOURCES
 )
 
 qt_wrap_ui(PRISMUPDATER_UI
-    updater/prismupdater/SelectReleaseDialog.ui
+    updater/nexoraupdater/SelectReleaseDialog.ui
     ui/widgets/SubTaskProgressBar.ui
     ui/dialogs/ProgressDialog.ui
 )
@@ -1441,14 +1441,14 @@ endif()
 
 if(Launcher_BUILD_UPDATER)
     # Updater
-    add_library(prism_updater_logic STATIC ${PRISMUPDATER_SOURCES} ${TASKS_SOURCES} ${PRISMUPDATER_UI})
-    target_include_directories(prism_updater_logic PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+    add_library(nexora_updater_logic STATIC ${PRISMUPDATER_SOURCES} ${TASKS_SOURCES} ${PRISMUPDATER_UI})
+    target_include_directories(nexora_updater_logic PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
     if(${Launcher_USE_PCH})
-        target_precompile_headers(prism_updater_logic PRIVATE ${PRECOMPILED_HEADERS})
+        target_precompile_headers(nexora_updater_logic PRIVATE ${PRECOMPILED_HEADERS})
     endif()
 
-    target_link_libraries(prism_updater_logic
+    target_link_libraries(nexora_updater_logic
         ${ZLIB_LIBRARIES}
         BuildConfig
         Qt${QT_VERSION_MAJOR}::Widgets
@@ -1458,17 +1458,17 @@ if(Launcher_BUILD_UPDATER)
         cmark::cmark
     )
     if(TARGET PkgConfig::libarchive)
-        target_link_libraries(prism_updater_logic PkgConfig::libarchive)
+        target_link_libraries(nexora_updater_logic PkgConfig::libarchive)
     else()
-        target_link_libraries(prism_updater_logic LibArchive::LibArchive)
+        target_link_libraries(nexora_updater_logic LibArchive::LibArchive)
     endif()
 
-    add_executable("${Launcher_Name}_updater" WIN32 updater/prismupdater/updater_main.cpp)
-    target_sources("${Launcher_Name}_updater" PRIVATE updater/prismupdater/updater.exe.manifest)
-    target_link_libraries("${Launcher_Name}_updater" prism_updater_logic)
+    add_executable("${Launcher_Name}_updater" WIN32 updater/nexoraupdater/updater_main.cpp)
+    target_sources("${Launcher_Name}_updater" PRIVATE updater/nexoraupdater/updater.exe.manifest)
+    target_link_libraries("${Launcher_Name}_updater" nexora_updater_logic)
 
     if(${Launcher_USE_PCH})
-        target_precompile_headers("${Launcher_Name}_updater" REUSE_FROM prism_updater_logic)
+        target_precompile_headers("${Launcher_Name}_updater" REUSE_FROM nexora_updater_logic)
     endif()
 
     if(DEFINED Launcher_APP_BINARY_NAME)

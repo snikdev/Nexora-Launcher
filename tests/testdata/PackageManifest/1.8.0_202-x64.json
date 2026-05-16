@@ -1176,49 +1176,49 @@
             "executable": true,
             "type": "file"
         },
-        "lib/amd64/libprism_common.so": {
+        "lib/amd64/libnexora_common.so": {
             "downloads": {
                 "lzma": {
                     "sha1": "f4aca04c90bc7505851c074a08b2c31cae1f94fa",
                     "size": 23315,
-                    "url": "https://launcher.mojang.com/v1/objects/f4aca04c90bc7505851c074a08b2c31cae1f94fa/libprism_common.so"
+                    "url": "https://launcher.mojang.com/v1/objects/f4aca04c90bc7505851c074a08b2c31cae1f94fa/libnexora_common.so"
                 },
                 "raw": {
                     "sha1": "b00866b6ed8646a29a334d46e297267552f27de8",
                     "size": 59008,
-                    "url": "https://launcher.mojang.com/v1/objects/b00866b6ed8646a29a334d46e297267552f27de8/libprism_common.so"
+                    "url": "https://launcher.mojang.com/v1/objects/b00866b6ed8646a29a334d46e297267552f27de8/libnexora_common.so"
                 }
             },
             "executable": true,
             "type": "file"
         },
-        "lib/amd64/libprism_es2.so": {
+        "lib/amd64/libnexora_es2.so": {
             "downloads": {
                 "lzma": {
                     "sha1": "7ff4173c338c7a6f370f231670055737e032da3e",
                     "size": 18416,
-                    "url": "https://launcher.mojang.com/v1/objects/7ff4173c338c7a6f370f231670055737e032da3e/libprism_es2.so"
+                    "url": "https://launcher.mojang.com/v1/objects/7ff4173c338c7a6f370f231670055737e032da3e/libnexora_es2.so"
                 },
                 "raw": {
                     "sha1": "1390a1dc14345e5a948148e59195d62f3a83863f",
                     "size": 63808,
-                    "url": "https://launcher.mojang.com/v1/objects/1390a1dc14345e5a948148e59195d62f3a83863f/libprism_es2.so"
+                    "url": "https://launcher.mojang.com/v1/objects/1390a1dc14345e5a948148e59195d62f3a83863f/libnexora_es2.so"
                 }
             },
             "executable": true,
             "type": "file"
         },
-        "lib/amd64/libprism_sw.so": {
+        "lib/amd64/libnexora_sw.so": {
             "downloads": {
                 "lzma": {
                     "sha1": "6728e8bf7b214067d715be6fe0325910d63c2468",
                     "size": 29457,
-                    "url": "https://launcher.mojang.com/v1/objects/6728e8bf7b214067d715be6fe0325910d63c2468/libprism_sw.so"
+                    "url": "https://launcher.mojang.com/v1/objects/6728e8bf7b214067d715be6fe0325910d63c2468/libnexora_sw.so"
                 },
                 "raw": {
                     "sha1": "7a6c34cb2bbcde411778d1b3f8677c39e32c3ac4",
                     "size": 71608,
-                    "url": "https://launcher.mojang.com/v1/objects/7a6c34cb2bbcde411778d1b3f8677c39e32c3ac4/libprism_sw.so"
+                    "url": "https://launcher.mojang.com/v1/objects/7a6c34cb2bbcde411778d1b3f8677c39e32c3ac4/libnexora_sw.so"
                 }
             },
             "executable": true,

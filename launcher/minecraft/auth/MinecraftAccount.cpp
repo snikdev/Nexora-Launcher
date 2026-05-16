@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 /*
- *  Prism Launcher - Minecraft Launcher
+ *  Nexora Launcher - Minecraft Launcher
  *  Copyright (C) 2022 Sefa Eyeoglu <contact@scrumplex.net>
  *
  *  This program is free software: you can redistribute it and/or modify
@@ -194,7 +194,7 @@ void MinecraftAccount::authFailed(QString reason)
 QString MinecraftAccount::displayName() const
 {
     if (const QList validStates{ AccountState::Unchecked, AccountState::Working, AccountState::Offline, AccountState::Online }; !validStates.contains(accountState())) {
-        return QString("⚠ %1").arg(profileName());
+        return QString("âš  %1").arg(profileName());
     }
     return profileName();
 }

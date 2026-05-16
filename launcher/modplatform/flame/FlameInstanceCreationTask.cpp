@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 /*
- *  Prism Launcher - Minecraft Launcher
+ *  Nexora Launcher - Minecraft Launcher
  *  Copyright (C) 2022 Sefa Eyeoglu <contact@scrumplex.net>
  *
  *  This program is free software: you can redistribute it and/or modify
@@ -418,7 +418,7 @@ std::unique_ptr<MinecraftInstance> FlameCreationTask::createInstance()
         const uint64_t max = sysMiB * 0.9;
 
         if (static_cast<uint64_t>(recommendedRAM) > max) {
-            logWarning(tr("The recommended memory of the modpack exceeds 90% of your system RAM—reducing it from %1 MiB to %2 MiB!")
+            logWarning(tr("The recommended memory of the modpack exceeds 90% of your system RAMâ€”reducing it from %1 MiB to %2 MiB!")
                            .arg(recommendedRAM)
                            .arg(max));
             recommendedRAM = max;

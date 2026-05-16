@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 /*
- *  Prism Launcher - Minecraft Launcher
+ *  Nexora Launcher - Minecraft Launcher
  *  Copyright (C) 2022 Sefa Eyeoglu <contact@scrumplex.net>
  *  Copyright (C) 2022 Jamie Mansfield <jmansfield@cadixdev.org>
  *  Copyright (C) 2023 TheKodeToad <TheKodeToad@proton.me>
@@ -913,14 +913,14 @@ QStringList MinecraftInstance::verboseDescription(AuthSessionPtr session, Minecr
             });
             for (auto mod : modList) {
                 if (mod->type() == ResourceType::FOLDER) {
-                    out << u8"  [🖿] " + mod->fileinfo().completeBaseName() + " (folder)";
+                    out << u8"  [ðŸ–¿] " + mod->fileinfo().completeBaseName() + " (folder)";
                     continue;
                 }
 
                 if (mod->enabled()) {
-                    out << u8"  [✔] " + mod->fileinfo().completeBaseName();
+                    out << u8"  [âœ”] " + mod->fileinfo().completeBaseName();
                 } else {
-                    out << u8"  [✘] " + mod->fileinfo().completeBaseName() + " (disabled)";
+                    out << u8"  [âœ˜] " + mod->fileinfo().completeBaseName() + " (disabled)";
                 }
             }
             out << emptyLine;

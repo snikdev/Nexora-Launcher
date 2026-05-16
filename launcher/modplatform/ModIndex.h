@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 /*
- *  Prism Launcher - Minecraft Launcher
+ *  Nexora Launcher - Minecraft Launcher
  *  Copyright (c) 2022 flowln <flowlnlnln@gmail.com>
  *  Copyright (c) 2023 Trial97 <alexandru.tripon97@gmail.com>
  *
@@ -143,7 +143,7 @@ struct IndexedVersion {
                 gameVersion = QObject::tr(" for %1").arg(v);
             }
         }
-        return QString("%1%2 — %3%4").arg(version, gameVersion, versionStr, release_type);
+        return QString("%1%2 â€” %3%4").arg(version, gameVersion, versionStr, release_type);
     }
 };
 

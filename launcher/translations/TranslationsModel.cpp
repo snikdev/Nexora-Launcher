@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 /*
- *  Prism Launcher - Minecraft Launcher
+ *  Nexora Launcher - Minecraft Launcher
  *  Copyright (c) 2022 flowln <flowlnlnln@gmail.com>
  *  Copyright (C) 2022 Sefa Eyeoglu <contact@scrumplex.net>
  *
@@ -72,9 +72,9 @@ struct Language {
     {
         QString result;
         if (key == "ja_KANJI") {
-            result = locale.nativeLanguageName() + u8" (漢字)";
+            result = locale.nativeLanguageName() + u8" (æ¼¢å­—)";
         } else if (key == "es_UY") {
-            result = u8"Español de Latinoamérica";
+            result = u8"EspaÃ±ol de LatinoamÃ©rica";
         } else if (key == "en_NZ") {
             result = u8"New Zealand English";  // No idea why qt translates this to just english and not to New Zealand English
         } else if (key == "en@pirate") {
@@ -84,7 +84,7 @@ struct Language {
         } else if (key == "tok") {
             result = u8"toki pona";
         } else if (key == "nan") {
-            result = u8"閩南語";  // Using traditional Chinese script. Not sure if we should use simplified instead?
+            result = u8"é–©å—èªž";  // Using traditional Chinese script. Not sure if we should use simplified instead?
         } else {
             result = locale.nativeLanguageName();
         }

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 /*
- *  Prism Launcher - Minecraft Launcher
+ *  Nexora Launcher - Minecraft Launcher
  *  Copyright (C) 2022 Sefa Eyeoglu <contact@scrumplex.net>
  *  Copyright (c) 2023 Trial97 <alexandru.tripon97@gmail.com>
  *
@@ -130,7 +130,7 @@ QString formatName(const QDir& iconsDir, const QFileInfo& iconFile)
     if (iconFile.dir() == iconsDir)
         return iconFile.completeBaseName();
 
-    constexpr auto delimiter = " » ";
+    constexpr auto delimiter = " Â» ";
     QString relativePathWithoutExtension =
         iconsDir.relativeFilePath(iconFile.dir().path()) + QDir::separator() + iconFile.completeBaseName();
     return relativePathWithoutExtension.replace(QDir::separator(), delimiter);

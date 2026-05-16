@@ -1,5 +1,5 @@
 name: Setup Linux dependencies
-description: Install and setup dependencies for building Prism Launcher
+description: Install and setup dependencies for building Nexora Launcher
 
 runs:
   using: composite
@@ -30,7 +30,7 @@ runs:
             APPIMAGE_ARCH="aarch64"
             ;;
           *)
-            echo "# 🚨 The Debian architecture \"$deb_arch\" is not recognized!" >> "$GITHUB_STEP_SUMMARY"
+            echo "# ðŸš¨ The Debian architecture \"$deb_arch\" is not recognized!" >> "$GITHUB_STEP_SUMMARY"
             exit 1
             ;;
         esac

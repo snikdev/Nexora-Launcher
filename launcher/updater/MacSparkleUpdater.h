@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-only
 /*
- *  Prism Launcher - Minecraft Launcher
+ *  Nexora Launcher - Minecraft Launcher
  *  Copyright (C) 2022 Kenneth Chew <kenneth.c0@protonmail.com>
  *
  *  This program is free software: you can redistribute it and/or modify
@@ -68,10 +68,10 @@ class MacSparkleUpdater : public ExternalUpdater {
      * automatic update checks enabled and sets this property based on their response. If SUEnableAutomaticChecks is
      * set in the Info.plist, this permission request is not performed however.
      *
-     * Setting this property will persist in the host bundle’s user defaults. Only set this property if you need
+     * Setting this property will persist in the host bundleâ€™s user defaults. Only set this property if you need
      * dynamic behavior (e.g. user preferences).
      *
-     * The update schedule cycle will be reset in a short delay after the property’s new value is set. This is to allow
+     * The update schedule cycle will be reset in a short delay after the propertyâ€™s new value is set. This is to allow
      * reverting this property without kicking off a schedule change immediately."
      */
     void setAutomaticallyChecksForUpdates(bool check) override;
@@ -79,11 +79,11 @@ class MacSparkleUpdater : public ExternalUpdater {
     /*!
      * Set the current automatic update check interval in seconds.
      *
-     * As per Sparkle documentation, "Setting this property will persist in the host bundle’s user defaults. For this
+     * As per Sparkle documentation, "Setting this property will persist in the host bundleâ€™s user defaults. For this
      * reason, only set this property if you need dynamic behavior (eg user preferences). Otherwise prefer to set
      * SUScheduledCheckInterval directly in your Info.plist.
      *
-     * The update schedule cycle will be reset in a short delay after the property’s new value is set. This is to allow
+     * The update schedule cycle will be reset in a short delay after the propertyâ€™s new value is set. This is to allow
      * reverting this property without kicking off a schedule change immediately."
      */
     void setUpdateCheckInterval(double seconds) override;

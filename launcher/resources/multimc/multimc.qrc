@@ -229,7 +229,7 @@
         <!-- discord logo icon thing. from discord. traced from bitmap -->
         <file>scalable/discord.svg</file>
 
-        <!-- flat instance icons CC BY-SA 4.0, Santiago Cézar -->
+        <!-- flat instance icons CC BY-SA 4.0, Santiago CÃ©zar -->
         <file>scalable/instances/chicken.svg</file>
         <file>scalable/instances/creeper.svg</file>
         <file>scalable/instances/enderpearl.svg</file>
@@ -311,7 +311,7 @@
 
         <file>50x50/instances/enderman_legacy.png</file>
 
-        <file>scalable/instances/prismlauncher.svg</file>
+        <file>scalable/instances/nexoralauncher.svg</file>
         <file>scalable/instances/fox_legacy.svg</file>
         <file>scalable/instances/bee_legacy.svg</file>
 
